@@ -1,22 +1,363 @@
-{ "Rowsets" : { 
-	"DateCreated" : "2019-06-14T15:03:56", "Version" : "15.1 SP6 Patch 0 (Nov 14, 2017)", "StartDate" : "2019-06-14T14:03:52+0000", "EndDate" : "2019-06-14T15:03:52+0000", "CachedTime" : "", 
-	"Rowset" : [ 
-	{ "Columns" : { 
-		"Column" : [ 
-		{ "Name" : "ORDER_NUMBER", "SourceColumn" : "ORDER_NUMBER", "Description" : "ORDER_NUMBER", "SQLDataType" : 1, "MinRange" : 1.0, "MaxRange" : 1.0 }, 
-		{ "Name" : "PRODUCTION_PLANT", "SourceColumn" : "PRODUCTION_PLANT", "Description" : "PRODUCTION_PLANT", "SQLDataType" : 1, "MinRange" : 1.0, "MaxRange" : 1.0 }, 
-		{ "Name" : "WORK_CENTER", "SourceColumn" : "WORK_CENTER", "Description" : "WORK_CENTER", "SQLDataType" : 1, "MinRange" : 1.0, "MaxRange" : 1.0 }, 
-		{ "Name" : "MATERIAL", "SourceColumn" : "MATERIAL", "Description" : "MATERIAL", "SQLDataType" : 1, "MinRange" : 1.0, "MaxRange" : 1.0 }, 
-		{ "Name" : "TARGET_QUANTITY", "SourceColumn" : "TARGET_QUANTITY", "Description" : "TARGET_QUANTITY", "SQLDataType" : 1, "MinRange" : 1.0, "MaxRange" : 1.0 }, 
-		{ "Name" : "UNIT", "SourceColumn" : "UNIT", "Description" : "UNIT", "SQLDataType" : 1, "MinRange" : 1.0, "MaxRange" : 1.0 }, 
-		{ "Name" : "SCHED_RELEASE_DATE", "SourceColumn" : "SCHED_RELEASE_DATE", "Description" : "SCHED_RELEASE_DATE", "SQLDataType" : 1, "MinRange" : 1.0, "MaxRange" : 1.0 }, 
-		{ "Name" : "OPERATION_NUMBER", "SourceColumn" : "OPERATION_NUMBER", "Description" : "OPERATION_NUMBER", "SQLDataType" : 1, "MinRange" : 1.0, "MaxRange" : 1.0 } ] }, 
-	"Row" : [ 
-		{ "ORDER_NUMBER" : "000001001160", "PRODUCTION_PLANT" : "1001", "WORK_CENTER" : "PLAN1001", "MATERIAL" : "000000000003000170", "TARGET_QUANTITY" : "8000", "UNIT" : "Pieza", "SCHED_RELEASE_DATE" : "2019-07-16", "OPERATION_NUMBER" : "0010" }, 
-		{ "ORDER_NUMBER" : "000001001201", "PRODUCTION_PLANT" : "1001", "WORK_CENTER" : "PLAN1001", "MATERIAL" : "000000000003000170", "TARGET_QUANTITY" : "99999", "UNIT" : "Pieza", "SCHED_RELEASE_DATE" : "2019-06-03", "OPERATION_NUMBER" : "0010" }, 
-		{ "ORDER_NUMBER" : "000001001202", "PRODUCTION_PLANT" : "1001", "WORK_CENTER" : "PLAN1001", "MATERIAL" : "000000000003000170", "TARGET_QUANTITY" : "99999", "UNIT" : "Pieza", "SCHED_RELEASE_DATE" : "2019-06-03", "OPERATION_NUMBER" : "0010" },
-		{ "ORDER_NUMBER" : "001151515151", "PRODUCTION_PLANT" : "1888", "WORK_CENTER" : "PLAN8888", "MATERIAL" : "000000000003000170", "TARGET_QUANTITY" : "99999", "UNIT" : "Pieza", "SCHED_RELEASE_DATE" : "2019-06-03", "OPERATION_NUMBER" : "0010" },
-		{ "ORDER_NUMBER" : "001151515151", "PRODUCTION_PLANT" : "1777", "WORK_CENTER" : "PLAN8877", "MATERIAL" : "000000000003000170", "TARGET_QUANTITY" : "99999", "UNIT" : "Pieza", "SCHED_RELEASE_DATE" : "2019-06-03", "OPERATION_NUMBER" : "0010" } ]
-		 } ]
-	 }
- }
+{
+	"Rowsets": {
+		"DateCreated": "2019-06-14T15:03:56",
+		"Version": "15.1 SP6 Patch 0 (Nov 14, 2017)",
+		"StartDate": "2019-06-14T14:03:52+0000",
+		"EndDate": "2019-06-14T15:03:52+0000",
+		"CachedTime": "",
+		"Rowset": [
+			{
+				"Columns": {
+					"Column": [
+						{
+							"Name": "ORDER_NUMBER",
+							"SourceColumn": "ORDER_NUMBER",
+							"Description": "ORDER_NUMBER",
+							"SQLDataType": 1,
+							"MinRange": 1.0,
+							"MaxRange": 1.0
+						},
+						{
+							"Name": "PRODUCTION_PLANT",
+							"SourceColumn": "PRODUCTION_PLANT",
+							"Description": "PRODUCTION_PLANT",
+							"SQLDataType": 1,
+							"MinRange": 1.0,
+							"MaxRange": 1.0
+						},
+						{
+							"Name": "WORK_CENTER",
+							"SourceColumn": "WORK_CENTER",
+							"Description": "WORK_CENTER",
+							"SQLDataType": 1,
+							"MinRange": 1.0,
+							"MaxRange": 1.0
+						},
+						{
+							"Name": "MATERIAL",
+							"SourceColumn": "MATERIAL",
+							"Description": "MATERIAL",
+							"SQLDataType": 1,
+							"MinRange": 1.0,
+							"MaxRange": 1.0
+						},
+						{
+							"Name": "TARGET_QUANTITY",
+							"SourceColumn": "TARGET_QUANTITY",
+							"Description": "TARGET_QUANTITY",
+							"SQLDataType": 1,
+							"MinRange": 1.0,
+							"MaxRange": 1.0
+						},
+						{
+							"Name": "UNIT",
+							"SourceColumn": "UNIT",
+							"Description": "UNIT",
+							"SQLDataType": 1,
+							"MinRange": 1.0,
+							"MaxRange": 1.0
+						},
+						{
+							"Name": "SCHED_RELEASE_DATE",
+							"SourceColumn": "SCHED_RELEASE_DATE",
+							"Description": "SCHED_RELEASE_DATE",
+							"SQLDataType": 1,
+							"MinRange": 1.0,
+							"MaxRange": 1.0
+						},
+						{
+							"Name": "OPERATION_NUMBER",
+							"SourceColumn": "OPERATION_NUMBER",
+							"Description": "OPERATION_NUMBER",
+							"SQLDataType": 1,
+							"MinRange": 1.0,
+							"MaxRange": 1.0
+						}
+					]
+				},
+				"Row": [
+					{
+						"ORDER_NUMBER": "000001001160",
+						"PRODUCTION_PLANT": "1001",
+						"WORK_CENTER": "PLAN1001",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "8000",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-07-16",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "000001001201",
+						"PRODUCTION_PLANT": "1001",
+						"WORK_CENTER": "PLAN1001",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "000001001202",
+						"PRODUCTION_PLANT": "1001",
+						"WORK_CENTER": "PLAN1001",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1888",
+						"WORK_CENTER": "PLAN8888",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "000001001160",
+						"PRODUCTION_PLANT": "1001",
+						"WORK_CENTER": "PLAN1001",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "8000",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-07-16",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "000001001201",
+						"PRODUCTION_PLANT": "1001",
+						"WORK_CENTER": "PLAN1001",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "000001001202",
+						"PRODUCTION_PLANT": "1001",
+						"WORK_CENTER": "PLAN1001",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1888",
+						"WORK_CENTER": "PLAN8888",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					},
+					{
+						"ORDER_NUMBER": "001151515151",
+						"PRODUCTION_PLANT": "1777",
+						"WORK_CENTER": "PLAN8877",
+						"MATERIAL": "000000000003000170",
+						"TARGET_QUANTITY": "99999",
+						"UNIT": "Pieza",
+						"SCHED_RELEASE_DATE": "2019-06-03",
+						"OPERATION_NUMBER": "0010"
+					}
+				]
+			}
+		]
+	}
+}

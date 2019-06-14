@@ -2,81 +2,82 @@
 <html>
 
 <head>
-   <title>SAP MII</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SAP MII</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/dataTables.min.css">
-   <style>
-            #logo {
-  	margin-bottom: 50px;
-  	background-color: #D42E29;
-  	padding: 1px;
-  	border: none;
-	}
-	.imagen{
-    	margin-left: 76%;
-	}
-        </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dataTables.min.css">
+    <style>
+        #logo {
+            margin-bottom: 50px;
+            background-color: #D42E29;
+            padding: 1px;
+            border: none;
+        }
+
+        .imagen {
+            margin-left: 76%;
+        }
+    </style>
 </head>
 
 <body>
-   <header>
-   </header>
-<article>
-            <div id="logo">
-                <img src="logo_tag.png" alt="tag" class="imagen">
+    <header>
+    </header>
+    <article>
+        <div id="logo">
+            <img src="logo_tag.png" alt="tag" class="imagen">
+        </div>
+    </article>
+    <section id="contenido">
+        <main role="main" class="container">
+            <div class="row form-group">
+                <div class="col-3" id="planta">
+                    <label>Planta</label>
+                </div>
             </div>
-        </article>
-   <section id="contenido">
-      <main role="main" class="container">
-         <div class="row form-group">
-            <div class="col-3" id="planta">
-               <label>Planta</label>
+            <div class="row form-group">
+                <div class="col-3" id="estacion">
+                    <label>Estación de trabajo</label>
+                </div>
             </div>
-         </div>
-         <div class="row form-group">
-            <div class="col-3" id="estacion">
-               <label>Estación de trabajo</label>
+            <div class="row form-group" width="100%">
+                <div class="col-12">
+                    <label>
+                        <br>
+                        <br>
+                        <h4>Ordenes de producción abiertas</h4>
+                    </label>
+                    <table class="table table-striped table-hover" id="prueba" width="100%" style="text-align:center;"></table>
+                </div>
             </div>
-         </div>
-         <div class="row form-group" width="100%">
-            <div class="col-12">
-               <label>
-	<br>
-	<br>
-                  <h4>Ordenes de producción abiertas</h4>
-               </label>
-               <table class="table table-striped table-hover" id="prueba" width="100%" style="text-align:center;"></table>
-            </div>
-         </div>
-         <div id="error"></div>
-         <form id="producir" action="javascript: producir()">
-            <div class="form-row form-group">
-               <div class="col-12">
-                  <label>Orden Seleccionada:</label>
-               </div>
-               <div class="col-3">
-                  <input class="form-control" type="text" id="orden" required readonly />
-               </div>
-               <div class="col-3">
-                  <button type="submit" class="btn btn-success">Producir Orden</button>
-               </div>
-            </div>
-         </form>
-      </main>
-   </section>
+            <div id="error"></div>
+            <form id="producir" action="javascript: producir()">
+                <div class="form-row form-group">
+                    <div class="col-12">
+                        <label>Orden Seleccionada:</label>
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="text" id="orden" required readonly />
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" class="btn btn-success">Producir Orden</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </section>
 
-   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="jss/jquery.min.js"></script>
-   <script src="jss/popper.min.js"></script>
-   <script src="jss/bootstrap.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jss/jquery.min.js"></script>
+    <script src="jss/popper.min.js"></script>
+    <script src="jss/bootstrap.min.js"></script>
 
-   <script src="jss/dataTables.min.js"></script>
-   <script src="jss/dataTables.select.min.js"></script>
-   <script src="jss/app.js"></script>
+    <script src="jss/dataTables.min.js"></script>
+    <script src="jss/dataTables.select.min.js"></script>
+    <script src="jss/app.js"></script>
 </body>
 
 </html>
